@@ -7,7 +7,7 @@ public class Lista<T> {
     publiv void aggiungiInTesta(T dato ){
         Nodo<T> nodo = new Nodo<>(dato);
         Nodo.next=head;
-        head=nodo;
+        head=nodo;//
     }
     public bolean isEmpty(){
         if(head==null){
