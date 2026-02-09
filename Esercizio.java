@@ -20,7 +20,7 @@ class Esercizio {
 
         //Output del nome acquisito da tastiera
         System.out.println("Ciao "+nome+"!");
-        Nodo<Integer>=new Nodo<>(4);//
+        Nodo<Integer>=new Nodo<>(4);
         Lista<Integer>=new Lista<>()
         if(ListInt.IsEmpty){
             System.out.println("è vuota");
