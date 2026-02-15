@@ -16,4 +16,14 @@ public class Lista<T> {
             return false;
         }
     }
+    public void AggiungiInCoda(T dato){
+        Nodo<T> nodo=new Nodo<>(dato);
+        Nodo<T> corrente=this.head;
+        if(corrente==null){
+            thid.head=nodo;
+        }
+        while(corrente,next!=null){
+            corrente?corrente.next;
+        }
+    }
 }

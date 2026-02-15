@@ -16,6 +16,7 @@ Public class Nodo{
     }
     public Nodo setNext(){
         this.next=next;
+        
     }
    
 }
