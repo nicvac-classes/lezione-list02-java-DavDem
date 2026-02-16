@@ -22,8 +22,20 @@ public class Lista<T> {
         if(corrente==null){
             thid.head=nodo;
         }
-        while(corrente,next!=null){
-            corrente?corrente.next;
+        while(corrente.next!=null){
+            corrente=corrente.next;
         }
+        corrente.next=nodo;
+    }
+    public void AggiungiInPosizione(T dato,int posizione){
+        Nodo<T> carr=this.head;
+        int posizioneCorrente=0;
+        while(posizioneCorrente<posizione-1){
+            carr=carr.next;
+            posizioneCorrente++;
+        }
+        Nodo<T> x=new Nodo<>(dato);
+        x.next=carr.next;
+        carr.next=nodo;
     }
 }

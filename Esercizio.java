@@ -14,6 +14,7 @@ class Esercizio {
         //Creo l'oggetto in per l'input da tastiera
         Scanner in = new Scanner( System.in );
 
+
         //Leggo l'input da tastiera
         System.out.print("Inserisci il tuo nome: ");
         nome = in.nextLine();
@@ -22,9 +23,17 @@ class Esercizio {
         System.out.println("Ciao "+nome+"!");
         Nodo<Integer>=new Nodo<>(4);
         Lista<Integer>=new Lista<>()
+        Lista.AggiungiInCoda("A");
+        Lista.AggiungiInCoda("B");
+        Lista.AggiungiInCoda("C");
         if(ListInt.IsEmpty){
             System.out.println("è vuota");
         }
+        System.out.println("inserisci la nuova posizione e l'elemento");
+        int posizione=Integer.parseInt(in.nextLine());
+        int elemento=Integer.parseInt(in.nextLine());
+        Lista=AggiungiInPosizione(posizione,elemento);
+
     }
 }
 
