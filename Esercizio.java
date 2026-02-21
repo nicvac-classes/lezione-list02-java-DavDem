@@ -33,6 +33,7 @@ class Esercizio {
         int posizione=Integer.parseInt(in.nextLine());
         int elemento=Integer.parseInt(in.nextLine());
         Lista=AggiungiInPosizione(posizione,elemento);
+        
 
     }
 }

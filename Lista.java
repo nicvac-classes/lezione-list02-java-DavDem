@@ -31,12 +31,20 @@ public class Lista<T> {
     public void AggiungiInPosizione(T dato,int posizione){
         Nodo<T> carr=this.head;
         int posizioneCorrente=0;
-        while(posizioneCorrente<posizione-1){
+        if(this.isEmpty()&& posizione==0){
+            this.aggiungiInTesta(dato);
+            return;
+        }
+        while(posizioneCorrente<posizione-1&& posizioneCorrente.next!=null){
             carr=carr.next;
             posizioneCorrente++;
         }
-        Nodo<T> x=new Nodo<>(dato);
-        x.next=carr.next;
-        carr.next=nodo;
+        if(posizioneCorrente!=null){
+            Nodo<T> x=new Nodo<>(dato);
+            x.next=carr.next;
+            carr.next=nodo;
+        }else{
+            
+        }
     }
 }
