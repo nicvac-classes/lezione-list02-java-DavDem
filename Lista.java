@@ -44,7 +44,23 @@ public class Lista<T> {
             x.next=carr.next;
             carr.next=nodo;
         }else{
-            
+            throw newNoSuchElementEception("posizione");
         }
     }
+    public  int LeggiInTesta(){
+        if(head==null){
+            throw newNoSuchElementEception("lista vuota");
+        }
+        retrn head.dato;
+    }
+    public int LeggiInCoda(){
+        if(head==null){
+            throw newNoSuchElementEception("lista vuota");
+        }
+        Nodo<T> currente=head;
+        while(current,next!= null){
+            currente=current.next;
+        }
+        return current.dato;
+    } 
 }

@@ -5,6 +5,7 @@ Public class Nodo{
         this.dato=dato;
         this.next=next;
     }
+    
     public int getDato(){
         return dato;
     }
