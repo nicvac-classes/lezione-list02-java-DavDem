@@ -63,4 +63,16 @@ public class Lista<T> {
         }
         return current.dato;
     } 
+    public <T> LeggiInPosizione(int posizione){
+        if(posizone<0){
+            throw new IndexOf Bound Eception ("posizione negativa");
+        }
+        int contatorePos=0;
+        Nodo<T> current=head;
+        while(contatorePos-1 && current.next!=null){
+            current=current.next();
+            posizione++;
+        }
+        return current.dato;
+    }
 }
