@@ -4,7 +4,6 @@
 //Import di Classi Java necessarie al funzionamento del programma
 import java.util.Scanner;
 
-
 // Classe principale, con metodo mainù
 class Esercizio {
     // Il programma parte con una chiamata a main().

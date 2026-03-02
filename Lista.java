@@ -73,6 +73,44 @@ public class Lista<T> {
             current=current.next();
             posizione++;
         }
-        return current.dato;
+        if(current!=null){
+            return current,dato;
+        }else{
+            throw new IndexOfBound Eception("posizione negativa");
+        }
+    }
+    public int size(){
+        Nodo<T> currente=head;
+        int n=0;
+        while(current!=null){
+            ++n;
+            current=current.next();
+        }
+        return n;
+    }
+    public boolean contains(T elemento){
+        Nodo <T>current=head;
+        if(head==null){
+            throw new NoSuchElementEception("lista vuota");
+        }
+        while(curr!=null){
+            if(current.dato.equals(elemento)){
+                return true;
+            }
+            current=current.next();
+        }
+        return false;
+    }
+    public int indiceDi(T elemento){
+        Nodo<T> current=null;
+        int indice=0;
+        while(current!=null){
+            if(current.dato.equals(elemento)){
+                return indice;
+            }
+            ++indice;
+            curr=current.next();
+        }
+        return indice;
     }
 }
