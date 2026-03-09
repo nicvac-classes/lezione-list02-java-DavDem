@@ -137,4 +137,25 @@ public class Lista<T> {
         
         return false;
     }
+    Public T cancellaP(int pos){
+        if(head==null){
+            throw new IndexOfBound Eception("lista vuota o posizione engativa");
+        }
+        if(pos==0){
+            head=head.dato;
+            return dato;
+        }
+        Nodo<T> prec=head;
+        Nodo<T> curr=head.next;
+        int e=1;
+        while(curr!=null){
+            if(e==pos){
+                T dato=dato;
+                prec.next==curr.next;
+                return dato;
+            }
+            ++è;
+        }
+        throw new IndexOfBound("posizione non trovata");
+    }
 }
