@@ -158,4 +158,28 @@ public class Lista<T> {
         }
         throw new IndexOfBound("posizione non trovata");
     }
+    public void Concatena(List<T> lista){
+        Nodo<T> curr=head;
+        if(this.head=null){
+            this.head=list.head;
+        }
+        while(curr.next!=null){
+            curr=curr.next;
+        }
+        curr.next=lista.head;
+    }
+    public String ToString(){
+        if(head==null){
+            trow 
+
+        }
+        Nodo<T> curr=head;
+        string a;
+        while(curr!=null){
+             a=curr,dato +"==>"
+        }
+        a=null;
+        return a;
+    }
+
 }
