@@ -37,6 +37,29 @@ class Esercizio {
         int posizione=Integer.parseInt(in.nextLine());
         int elemento=Integer.parseInt(in.nextLine());
         Lista=AggiungiInPosizione(posizione,elemento);
+        Lista=aggiungiInTesta(elemento);
+        Lista=AggiungiInCoda(elemento);
+        LeggiInCoda();
+        LeggiInTesta();
+        LeggiInPosizione( posizione);
+        Lista=size();
+        Lista=contains( elemento);
+        Lista=indiceDi(elemento);
+        Lista=cancella(elemento);
+        Lista=cancellaP(posizione);
+        Nodo<Integer>=new Nodo<>(4);
+        Lista2<Integer>=new Lista2<>()
+        Lista2.AggiungiInCoda("F");
+        Lista2.AggiungiInCoda("G");
+        Lista2.AggiungiInCoda("Z");
+        Lista=Concatena(Lista2);
+        
+
+
+        
+
+
+
         
 
     }
